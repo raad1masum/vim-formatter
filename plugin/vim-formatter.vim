@@ -3,7 +3,7 @@ let s:plugin_root_dir = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 let working_file = expand('%:p')
 
 function Format()
-    :execute "normal gg=G"
+    :execute "normal! gg=G"
 endfunction
 
 :command Format call Format()
